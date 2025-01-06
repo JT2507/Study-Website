@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--standard setup of webset-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!--links css file-->
+  <link rel="stylesheet" href="flashcard.css">
+  <title>Flashcards</title>
+</head>
+<body>
+
+
+  
+
+  <main>
+    <header>
+      <!--name of website-->
+      <h1>Learn Hub</h1>
+      <hr>
+      <nav class="navbar">
+        <ul>
+            <!--hyper links for navigation bar-->
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="flashcard.html">Flashcards</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="recall.html">Recall</a></li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <div id="header">
+          <h1>Flashcards</h1>
+          <!--Create buttons for adding cards and deleting cards-->
+          <div>
+            <button id="show_card_box">Add Card</button>
+            <button id="delete_cards">Delete Cards</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section>
+      <!--Card prompt to create flashcards-->
+      <div class="container">
+        <div id="create_card">
+          <h2>Create Flashcard</h2>
+          <label for="question">Question</label>
+          <textarea id="question" maxlength="280"></textarea>
+          <label for="answer" maxlength="280">Answer</label>
+          <br>
+          <textarea id="answer"></textarea>
+          <div>
+            <!--button to save flashcard or close the create card-->
+            <button id="save_card">Save</button> <button id="close_card_box">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!--sets class and id labels for the section-->
+      <div class="container">
+        <div id="flashcards"></div>
+      </div>
+    </section>
+
+  </main>
+  <!--link to javascript file-->
+  <script src="flashcard.js"></script>
+</body>
+</html>

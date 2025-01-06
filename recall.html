@@ -1,0 +1,65 @@
+
+<!--Defines that this document is an HTML5 Document-->
+<!DOCTYPE html>
+
+<!--Root element of an HTML page-->
+<html lang="en">
+    <!--element contains meta information about the HTML page-->
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <!--Name Of Website-->
+            <!--Specifies title for HTML page on page tab-->
+            <title>Recall</title>
+            <!--Link for the external style sheet in CSS-->
+            <link rel="stylesheet" href="recall.css">
+    </head>
+
+
+    <!--Document body for all content-->
+    <body>
+        <header>
+            <!--Name Of Website-->
+            <h1>Learn Hub</h1>
+        </header>
+        <hr>
+        <!--navigation bar-->
+        <nav class="navbar">
+            <ul>
+                <!--Hyprt links files to matching sections of the nav bar-->
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="flashcard.html">Flashcards</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="recall.html">Recall</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!--Introduction-->
+            <section id="home" >
+                <h2>Recall Method</h2>
+                <p>Write down what you know from memory from flashcards</p>
+            </section>
+
+        <div class="card">
+            <h1>Recall</h1>
+                <div class="quiz">
+                    <h2 id="question">Definition goes here</h2>
+                    <!--User imput for the guess-->
+                    <form>
+                        <label for="guess">Guess:</label>
+                        <input type="text" id="guess" iput="guess" placeholder="Text">
+                    </form>
+                    <!--Buttons to interact-->
+                    <button id="gen-btn">Generate</button>
+                    <button id="rev-btn">Reveal Answer</button>
+                </div>
+            </div>
+        </main>
+  
+          <!--Links to javascript file-->
+          <script src="recall.css"></script>
+
+    </body>
+</html>
